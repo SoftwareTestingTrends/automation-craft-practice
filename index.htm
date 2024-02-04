@@ -4,162 +4,220 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Test Crafters Club - Automation Practice Site</title>
+    <title>Test Automation Craft</title>
   </head>
   <body>
-    <div id="promoBanner">
-      <h2>Welcome to Test Crafters Club!</h2>
-      <p>
-        Join our collaborative learning community focused on software testing
-        and automation practices.
-      </p>
-    </div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.htm" class="active">Home</a></li>
+          <li><a href="webform.htm">Web Form</a></li>
+          <li><a href="about.htm">About</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <div id="intro">
-      <h1>About Test Crafters Club</h1>
-      <p class="note">Note: This is a dummy form to practice test automation skills. No actual form submission occurs.</p>
+      <h1>Welcome to the Test Automation Craft Hub!</h1>
       <p>
-        Test Crafters Club is a collaborative learning community focused on
-        software testing and automation practices. It operates like a book club
-        but utilizes free courses and tutorials to enhance participants' skills
-        in the field of software testing & automation.
+        This website aims to serve as a dedicated platform for honing UI and API
+        test automation skills. It is currently under development, with plans to
+        incorporate more challenging scenarios in the near future.
       </p>
     </div>
 
-    <h1>Join Test Crafters Club</h1>
+    <div id="challenges">
+      <h2>UI Automation Challenges</h2>
+      <h3>Challenge: Automate the Web Form</h3>
+      <p>
+        Complete the following tasks using the sample
+        <a href="./webform.htm">Web Form.</a>
+      </p>
+      <ul>
+        <li>
+          <strong>Task 1:</strong> Open the website and confirm the accuracy of
+          the page URL, title, and heading.
+        </li>
+        <li>
+          <strong>Task 2:</strong> Complete the web form; upon submission,
+          verify the correctness of the thank-you message.
+        </li>
+        <li>
+          <strong>Task 3:</strong> Attempt to submit the web form without
+          entering any information and verify that appropriate error messages
+          are displayed.
+        </li>
+        <li>
+          <strong>Task 4:</strong> Select a different location from the dropdown
+          in the web form and verify the selected value.
+        </li>
+        <li>
+          <strong>Task 5:</strong> Check the checkbox for a programming language
+          (e.g., JavaScript) and confirm its selection.
+        </li>
+        <li>
+          <strong>Task 6:</strong> Choose multiple testing tools in the form,
+          submit it, and validate the selected tools on the confirmation page.
+        </li>
+        <li>
+          <strong>Task 7:</strong> Toggle between radio buttons for gender,
+          submit the form, and confirm the selected gender on the confirmation
+          page.
+        </li>
+        <li>
+          <strong>Task 8:</strong> Fill the web form; On page submission,
+          validate the submitted information on the confirmation page.
+        </li>
+      </ul>
+      <hr />
+      <h2>API Automation Challenges</h2>
+      <h3>Challenge: API Functional & Non-Functional Testing</h3>
+      <p>
+        Use the <a href="https://reqres.in/" target="_blank">Reqres API</a> to
+        perform the following tasks.
+      </p>
+      <ul>
+        <li>
+          <strong>Task 1: Existing User Verification</strong>
+          <p>
+            Send a GET request to retrieve deatils about an existing user.
+            Verify the correctness of the user details.
+          </p>
+        </li>
+        <li>
+          <strong>Task 2: User Creation and Verification</strong>
+          <p>
+            Send a POST request to create a new user. Verify the response for
+            successful creation.
+          </p>
+        </li>
+        <li>
+          <strong>Task 3: User Update and Verification</strong>
+          <p>
+            Send a PUT request to update the user's information. Verify the
+            response and check the updated details.
+          </p>
+        </li>
+        <li>
+          <strong>Task 4: User Deletion and Verification</strong>
+          <p>
+            Send a DELETE request to remove the user. Verify the response and
+            confirm the user's deletion.
+          </p>
+        </li>
+        <li>
+          <strong>Task 5: List Users and Verify Content</strong>
+          <p>
+            Retrieve the list of users using a GET request. Validate the
+            correctness of the user details in the response.
+          </p>
+        </li>
+        <li>
+          <strong>Task 6: Error Handling</strong>
+          <p>
+            Intentionally send incorrect requests (e.g., with missing
+            parameters). Verify that the API returns appropriate error messages.
+          </p>
+        </li>
+        <li>
+          <strong>Task 7: Pagination Testing</strong>
+          <p>
+            Test pagination by retrieving users with different page numbers.
+            Validate the correctness of pagination.
+          </p>
+        </li>
+        <li>
+          <strong>Task 8: Authorization Testing</strong>
+          <p>
+            Explore API endpoints that require authorization (e.g., user login).
+            Implement tests to ensure proper authorization mechanisms. Also
+            validate the API responses for unauthorized access.
+          </p>
+        </li>
+        <li>
+          <strong>Task 9: Performance Testing</strong>
+          <p>
+            Measure the response time for different API endpoints. Implement
+            tests to ensure acceptable performance levels.
+          </p>
+        </li>
+        <li>
+          <strong>Task 10: Interoperability Testing</strong>
+          <p>
+            Create and execute a test suite that includes multiple API requests
+            with dependencies between them.
+          </p>
+        </li>
+      </ul>
+      <hr />
+      <h2>GitHub Action Challenges</h2>
+      <h3>Challenge: Automate the Web Form</h3>
+      <ul>
+        <li>
+          <strong>Task 1:</strong> Set up a GitHub Action for manually
+          initiating a workflow -
+          <a
+            href="https://github.com/SoftwareTestingTrends/github-actions-practice/blob/main/practice-exercise-1.md"
+            target="_blank"
+            >Solution</a
+          >
+        </li>
+        <li>
+          <strong>Task 2:</strong> Setup a GitHub Action to activate a workflow
+          upon pushing changes to the main branch -
+          <a
+            href="https://github.com/SoftwareTestingTrends/github-actions-practice/blob/main/practice-exercise-2.md"
+            target="_blank"
+            >Solution</a
+          >
+        </li>
+        <li>
+          <strong>Task 4:</strong> Setup a GitHub Action to activate a workflow
+          on a PR (pull-request) event -
+          <a
+            href="https://github.com/SoftwareTestingTrends/github-actions-practice/blob/main/practice-exercise-3.md"
+            target="_blank"
+            >Solution</a
+          >
+        </li>
+        <li>
+          <strong>Task 3:</strong> Setup a GitHub Action to activate a workflow
+          on a given schedule -
+          <a
+            href="https://github.com/SoftwareTestingTrends/github-actions-practice/blob/main/practice-exercise-4.md"
+            target="_blank"
+            >Solution</a
+          >
+        </li>
+        <li>
+          <strong>Task 5:</strong> Setup a GitHub Action to activate a workflow
+          on a repository_dispatch event -
+          <a
+            href="https://github.com/SoftwareTestingTrends/github-actions-practice/blob/main/practice-exercise-5.md"
+            target="_blank"
+            >Solution</a
+          >
+        </li>
+        <li>
+          <strong>Task 6:</strong> Setup an E2E pipeline -
+          <a
+            href="https://github.com/SoftwareTestingTrends/github-actions-practice/blob/main/practice-exercise-6.md"
+            target="_blank"
+            >Solution</a
+          >
+        </li>
+      
+        <li><strong>Task 7:</strong> Build a custom action</li>
+      </ul>
+    </div>
 
-    <form id="dummyForm">
-      <div class="personal">
-        <label for="firstName"
-          >First Name:
-          <input type="text" id="firstName" name="firstName" required
-        /></label>
-
-        <label for="lastName"
-          >Last Name: <input type="text" id="lastName" name="lastName" required
-        /></label>
-      </div>
-
-      <label for="location">Location:</label>
-      <select id="location" name="location">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="france">France</option>
-        <option value="germany">Germany</option>
-        <option value="india">India</option>
-        <option value="japan">Japan</option>
-        <option value="pakistan">Pakistan</option>
-        <option value="uk">UK</option>
-        <option value="usa">USA</option>
-        <option value="other">Other</option>
-      </select>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-
-      <div class="form-group radio-group">
-        <label>Gender:</label>
-        <label>
-          <input type="radio" id="male" name="gender" value="male" />Male
-        </label>
-        <label>
-          <input type="radio" id="female" name="gender" value="female" />Female
-        </label>
-      </div>
-
-      <label>What programming languages are you familiar with?</label>
-      <div class="form-group checkbox-group">
-        <label>
-          <input
-            type="checkbox"
-            id="javascript"
-            name="languages"
-            value="javascript"
-          />
-          JavaScript
-        </label>
-        <label>
-          <input type="checkbox" id="python" name="languages" value="python" />
-          Python
-        </label>
-        <label>
-          <input type="checkbox" id="java" name="languages" value="java" />
-          Java
-        </label>
-      </div>
-
-      <label>What testing tools are you familiar with?</label>
-      <div class="form-group checkbox-group">
-        <label>
-          <input
-            type="checkbox"
-            id="selenium"
-            name="automation"
-            value="selenium"
-          />
-          Selenium
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            id="cypress"
-            name="automation"
-            value="cypress"
-          />
-          Cypress
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            id="playwright"
-            name="automation"
-            value="playwright"
-          />
-          Playwright
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            id="webdriverio"
-            name="automation"
-            value="webdriverio"
-          />
-          WebdriverIO
-        </label>
-        <label>
-          <input type="checkbox" id="appium" name="automation" value="appium" />
-          Appium
-        </label>
-      </div>
-
-      <label for="aspirations">Your Career Aspirations:</label>
-      <textarea id="aspirations" name="aspirations" rows="4"></textarea>
-
-      <label for="gainFromCommunity"
-        >What do you hope to gain from this community?</label
-      >
-      <textarea
-        id="gainFromCommunity"
-        name="gainFromCommunity"
-        rows="4"
-      ></textarea>
-
-      <label for="interestingFact">Interesting Fact About You:</label>
-      <textarea id="interestingFact" name="interestingFact" rows="4"></textarea>
-
-      <label for="linkedin">LinkedIn Profile:</label>
-      <input
-        type="url"
-        id="linkedin"
-        name="linkedin"
-        placeholder="https://www.linkedin.com/in/yourprofile"
-        pattern="https://.*"
-        size="30"
-      />
-      <p class="note">Note: This is a dummy form. No actual form submission occurs.</p>
-      <input type="submit" value="Join Test Crafters Club" id="joinButton" />
-
-      <script src="index.js"></script>
-    </form>
+    <footer>
+      <p>
+        &copy; 2024
+        <a href="https://softwaretestingtrends.com/" target="_blank"
+          >Software Testing Trends</a
+        >. All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>

@@ -1,28 +1,75 @@
 body {
-  font-family: "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f9fa;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #004D3F;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    color: #fff; /* Set the link color to white */
+    text-decoration: none; /* Remove underline */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Add underline on hover if needed */
+}
+
+nav a.active {
+    text-decoration: underline; /* Style for the active link */
 }
 
 h1 {
-  color: #007bff;
+  color: maroon;
+  padding-top: 60px;
 }
 
-#promoBanner {
-  background-color: #28a745;
-  color: #ffffff;
-  padding: 20px;
-  margin-bottom: 20px;
-  text-align: center;
+h2 {
+  color: maroon;
+}
+
+h3 {
+  color: #004D3F;
 }
 
 #intro {
+    max-width: 800px;
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+#challenges, #userinfo {
   max-width: 800px;
   margin: 20px;
   padding: 20px;
@@ -31,6 +78,15 @@ h1 {
   border-radius: 5px;
   text-align: left;
 }
+
+ #challenges ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #challenges li {
+        margin-bottom: 15px; /* Adjust this value to increase or decrease the spacing */
+    }
 
 #dummyForm {
   width: 100%;
@@ -108,7 +164,7 @@ label {
 }
 
 input[type="submit"] {
-  background-color: #007bff;
+  background-color: #004D3F;
   color: #fff;
   padding: 10px 15px;
   border: none;
@@ -118,9 +174,15 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #DD9F5F;
+  color: #004D3F;
 }
 
 .note {
     color: red;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
 }

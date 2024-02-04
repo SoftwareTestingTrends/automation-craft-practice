@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Test Crafters Club - Automation Practice Site</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.htm">Home</a></li>
+          <li><a href="webform.htm" class="active">Web Form</a></li>
+          <li><a href="about.htm">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="intro">
+      <h1>Join the "Test Crafters Club"</h1>
+      <p class="note">
+        Note: This is a dummy form. No actual form submission occurs.
+      </p>
+    </div>
+
+    <form id="dummyForm">
+      <div class="personal">
+        <label for="firstName"
+          >First Name:
+          <input type="text" id="firstName" name="firstName" required
+        /></label>
+
+        <label for="lastName"
+          >Last Name: <input type="text" id="lastName" name="lastName" required
+        /></label>
+      </div>
+
+      <label for="location">Location:</label>
+      <select id="location" name="location">
+        <option value="Australia">Australia</option>
+        <option value="Canada">Canada</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="India">India</option>
+        <option value="Japan">Japan</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="UK">UK</option>
+        <option value="USA">USA</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <div class="form-group radio-group">
+        <label>Gender:</label>
+        <label>
+          <input type="radio" id="male" name="gender" value="Male" />Male
+        </label>
+        <label>
+          <input type="radio" id="female" name="gender" value="Female" />Female
+        </label>
+      </div>
+
+      <label>What programming languages are you familiar with?</label>
+      <div class="form-group checkbox-group">
+        <label>
+          <input
+            type="checkbox"
+            id="javascript"
+            name="languages"
+            value="Javascript"
+          />
+          JavaScript
+        </label>
+        <label>
+          <input type="checkbox" id="python" name="languages" value="Python" />
+          Python
+        </label>
+        <label>
+          <input type="checkbox" id="java" name="languages" value="Java" />
+          Java
+        </label>
+      </div>
+
+      <label>What testing tools are you familiar with?</label>
+      <div class="form-group checkbox-group">
+        <label>
+          <input
+            type="checkbox"
+            id="selenium"
+            name="automation"
+            value="Selenium"
+          />
+          Selenium
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            id="cypress"
+            name="automation"
+            value="Cypress"
+          />
+          Cypress
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            id="playwright"
+            name="automation"
+            value="Playwright"
+          />
+          Playwright
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            id="webdriverio"
+            name="automation"
+            value="WebdriverIO"
+          />
+          WebdriverIO
+        </label>
+        <label>
+          <input type="checkbox" id="appium" name="automation" value="appium" />
+          Appium
+        </label>
+      </div>
+
+      <label for="aspirations">Your Career Aspirations:</label>
+      <textarea id="aspirations" name="aspirations" rows="4"></textarea>
+
+      <label for="gainFromCommunity"
+        >What do you hope to gain from this community?</label
+      >
+      <textarea
+        id="gainFromCommunity"
+        name="gainFromCommunity"
+        rows="4"
+      ></textarea>
+
+      <label for="interestingFact">Interesting Fact About You:</label>
+      <textarea id="interestingFact" name="interestingFact" rows="4"></textarea>
+
+      <label for="linkedin">LinkedIn Profile:</label>
+      <input
+        type="url"
+        id="linkedin"
+        name="linkedin"
+        placeholder="https://www.linkedin.com/in/yourprofile"
+        pattern="https://.*"
+        size="30"
+      />
+      <p class="note">
+        Note: This is a dummy form. No actual form submission occurs.
+      </p>
+      <input type="submit" value="Join Test Crafters Club" id="joinButton" />
+
+      <script src="index.js"></script>
+    </form>
+    <footer>
+      <p>&copy; 2024 <a href="https://softwaretestingtrends.com/" target="_blank">Software Testing Trends</a>. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
